@@ -33,3 +33,4 @@ class Admin::SessionsController < Admin::Base
       redirect_to :admin_root
     end
   end
+end
