@@ -32,5 +32,6 @@ module Baukis
       g.controller_specs false
       g.view_specs false
     end
+    config.action_controller.permit_all_parameters = true
   end
 end
