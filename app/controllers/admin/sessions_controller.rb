@@ -26,11 +26,11 @@ class Admin::SessionsController < Admin::Base
       flash.now.alert = 'メールアドレスまたはパスワードが正しくありません。'
       render action: 'new'
     end
+  end
 
-    def destroy
-      session.delete(:administrator_id)
-      flash.notice = 'ログアウトしました。'
-      redirect_to :admin_root
-    end
+  def destroy
+    session.delete(:administrator_id)
+    flash.notice = 'ログアウトしました。'
+    redirect_to :admin_root
   end
 end
