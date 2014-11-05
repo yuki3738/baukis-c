@@ -1,5 +1,9 @@
 require 'rails_helper'
 
+describe Staff::AccountsController, 'ログイン前' do
+  it_behaves_like 'a protected singular staff controller'
+end
+
 describe Staff::AccountsController do
   describe '#update' do
     let(:params_hash) { attributes_for(:staff_member) }
@@ -7,6 +11,7 @@ describe Staff::AccountsController do
 
     before do
       session[:staff_member_id] = staff_member.id
+      session[:last_access_time] = 1.second.ago
     end
 
     example 'email属性を変更する' do
