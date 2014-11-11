@@ -64,6 +64,8 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    foreigner (1.6.1)
+      activerecord (>= 3.0.0)
     hike (1.2.3)
     hirb (0.7.2)
     hirb-unicode (0.0.5)
@@ -199,6 +201,7 @@ DEPENDENCIES
   capybara (~> 2.2.1)
   coffee-rails (~> 4.0.0)
   factory_girl_rails (~> 4.4.1)
+  foreigner (~> 1.6.1)
   hirb
   hirb-unicode
   jbuilder (~> 2.0)
