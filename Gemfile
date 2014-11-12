@@ -17,6 +17,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'nokogiri', '~> 1.6.1'
 gem 'rails-i18n', '~> 4.0.1'
 gem 'foreigner', '~> 1.6.1'
+gem 'kaminari', '~> 0.15.1'
 
 group :development do
   gem 'better_errors'
