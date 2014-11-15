@@ -29,6 +29,7 @@ group :development do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
+  gem 'quiet_assets', '~> 1.0.2'
 end
 
 group :test do
